@@ -1,0 +1,23 @@
+POST http://localhost:4001/tasks
+content-type: application/json
+
+{
+  "title": "Revise React",
+  "status": "TODO",
+  "priority": "LOW",
+  "createdAt": "2024-12-08",
+  "updatedAt": "2024-12-08"
+}
+
+
+###
+GET http://localhost:4001/tasks
+
+###
+GET http://localhost:4001/tasks/2/
+
+###
+DELETE http://localhost:4001/tasks/2
+
+###
+PUT http://localhost:4001/tasks/1/
